@@ -1,0 +1,5 @@
+name: ItemRename
+main: norell.rename.Main
+version: "1.0.0"
+api: "2.0.0"
+author: NoRell
