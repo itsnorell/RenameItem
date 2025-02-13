@@ -34,8 +34,7 @@ public class RenameItemForm implements Listener {
                         FormResponseCustom response = (FormResponseCustom) event.getResponse();
                         String input = response.getInputResponse(1);
                         RenameManager.renameItem(player, input);
-                        System.out.println("Form Response: " + response);
-                    }
+                        }
                 }
             }
         } catch (Exception e) {
