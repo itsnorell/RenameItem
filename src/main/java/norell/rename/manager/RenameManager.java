@@ -7,7 +7,6 @@ import norell.rename.Main;
 public class RenameManager {
 
     public static boolean renameItem(Player player, String input) {
-        System.out.println("Renaming item with input: " + input);
         if (input == null || input.trim().isEmpty() || input.length() < 3 || input.length() > 15) {
             player.sendMessage("§8» §cEşya adı 3 ile 15 karakter arasında olmalıdır.");
             return false;
