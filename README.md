@@ -1,1 +1,1 @@
-Nukkit için eşya isim eklentisi.
+ItemRename plugin for PowerNukkitX
