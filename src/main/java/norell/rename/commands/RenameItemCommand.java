@@ -11,7 +11,7 @@ import java.util.Objects;
 public class RenameItemCommand extends Command {
 
     public RenameItemCommand() {
-        super("eisim", "Eşyalarına özel bir isim vermek ister misin?");
+        super("rename", "Do you want to give a special name to your items?");
     }
 
     @Override
@@ -20,11 +20,11 @@ public class RenameItemCommand extends Command {
 
         Item item = player.getInventory().getItemInHand();
         if (Objects.equals(item.getId(), Item.AIR.getId())) {
-            player.sendMessage("§8» §cEline bir eşya al.");
+            player.sendMessage("§8» §cTake an item in your hand.");
             return false;
         }
         if (!item.isArmor() && !item.isTool()) {
-            player.sendMessage("§8» §cElindeki eşya isimlendirilemez.");
+            player.sendMessage("§8» §cThe item cannot be named.");
             return false;
         }
         RenameItemForm.openForm(player);
