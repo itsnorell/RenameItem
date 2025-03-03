@@ -13,7 +13,7 @@ public class Main extends PluginBase {
 
     @Override
     public void onEnable() {
-        this.getLogger().info(TextFormat.GREEN + "Rename Aktif.");
+        this.getLogger().info(TextFormat.GREEN + "ReName [+]");
         getServer().getPluginManager().registerEvents(new RenameItemForm(), this);
         getServer().getCommandMap().register("eisim", new RenameItemCommand());
     }
