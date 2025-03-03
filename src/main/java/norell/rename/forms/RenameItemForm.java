@@ -16,10 +16,9 @@ public class RenameItemForm implements Listener {
     public static void openForm(Player player) {
         FormWindowCustom form = new FormWindowCustom("Eşya isim Değiştirme");
         form.addElement(new ElementLabel(
-                String.format("§7Aşağıya girdiğiniz isim uzunluğunca para kesilir. \n§aHarf Başı Ücret:§6 "
-                        + Main.RenamePrice + " TL\n§aParan:§6 x TL"))
+                String.format("§7Type the new name of the item."))
         );
-        form.addElement(new ElementInput("Eşya İsmi Gir:", "Kazma"));
+        form.addElement(new ElementInput("Enter Item Name:", "NoRell's Picaxe"));
 
         player.showFormWindow(form, Main.RenameItemFormID);
     }
